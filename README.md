@@ -1,4 +1,4 @@
-﻿# eso0m.github.io
+# eso0m.github.io
 
 A personal portfolio website showcasing my **research**, **software development** and **creative work**. Built with **HTML and CSS**, the site emphasizes creative design, readability, and a fantastic user experience.
 
