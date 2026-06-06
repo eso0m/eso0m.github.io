@@ -1,108 +1,178 @@
-.coding{
-    padding: 128px 12%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 64px;
-    background: #fff0f6;
-    color: #000000;
+﻿:root {
+  --max-width: 1200px;
+  --page-padding: 12%;
+  --header-height: 64px;
+  --transition: 0.3s ease;
 }
 
-/* Ensure header links are visible on light pink */
-header{
-    color: #000000;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header li a{
-    color: #000000;
+html {
+  scroll-behavior: smooth;
 }
 
-.coding h1{
-    font-size: 48px;
-    margin-bottom: 24px;
-    color: #000000;
+body {
+  min-height: 100vh;
+  background: #fff0f6;
+  color: #1f1f1f;
+  font-family: Arial, sans-serif;
 }
 
-.coding-item{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    flex-wrap: wrap;
+header {
+  position: fixed;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(70%, var(--max-width));
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
+  z-index: 1000;
 }
 
-.coding-item--text-right{
-    flex-direction: row-reverse;
+.header-spacer {
+  height: calc(var(--header-height) + 16px);
 }
 
-.coding-copy{
-    flex: 1 1 60%;
-    color: #000000;
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  list-style: none;
 }
 
-.coding-copy h2{
-    font-size: 28px;
-    margin-bottom: 8px;
-    color: #000000;
+.nav-links a {
+  color: inherit;
+  font-size: 17.6px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color var(--transition);
 }
 
-.coding-place{
-    color: #777777;
-    margin-bottom: 12px;
-    font-size: 16px;
+section {
+  padding: 128px var(--page-padding);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
 }
 
-.coding-details{
-    color: #000000;
-    line-height: 1.6;
-    font-size: 16px;
-    margin-bottom: 12px;
+.coding {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.coding-links a{
-    display: inline-block;
-    margin-right: 12px;
-    padding: 8px 12px;
-    background: #ff66b2;
-    color: #fff;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
+.coding h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
 }
 
-.coding-visual{
-    flex: 0 0 33%;
-    min-width: 240px;
-    display: flex;
-    justify-content: center;
+.coding-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.coding-image{
-    width: 100%;
-    max-width: 360px;
+.coding-item--text-right {
+  flex-direction: row-reverse;
 }
 
-.coding-image img{
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 12px;
-    object-fit: cover;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+.coding-copy {
+  flex: 1 1 55%;
+  min-width: 280px;
+}
+
+.coding-copy h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.coding-place {
+  color: #777;
+  margin-bottom: 14px;
+  font-size: 1rem;
+}
+
+.coding-details {
+  line-height: 1.75;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #2a2a2a;
+}
+
+.coding-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.coding-links a {
+  display: inline-block;
+  padding: 10px 16px;
+  background: #ff66b2;
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.coding-visual {
+  flex: 0 0 33%;
+  min-width: 260px;
+  display: flex;
+  justify-content: center;
+}
+
+.coding-image {
+  width: 100%;
+  max-width: 360px;
+}
+
+.coding-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 @media (max-width: 960px) {
-    .coding-item{
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  header {
+    left: 0;
+    transform: none;
+    width: 100%;
+    padding: 0 18px;
+  }
 
-    .coding-item--text-right{
-        flex-direction: column;
-    }
+  section {
+    padding: 96px 8%;
+  }
 
-    .coding-visual{
-        width: 100%;
-        min-width: auto;
-    }
+  .coding-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .coding-item--text-right {
+    flex-direction: column;
+  }
+
+  .coding-visual {
+    width: 100%;
+    min-width: auto;
+  }
 }
