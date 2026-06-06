@@ -1,30 +1,21 @@
 ﻿# eso0m.github.io
 
-A minimal, clean portfolio website showcasing research, coding, and creative work.
+A personal portfolio website showcasing my **research**, **software development** and **creative work**. Built with **HTML and CSS**, the site emphasizes creative design, readability, and a fantastic user experience.
 
-## Pages
+## 🌟 Overview
 
-- home.html — Landing page with introduction
-- cv.html — Curriculum vitae and skills
-- research.html — Research projects and highlights
-- coding.html — Coding portfolio and projects
-- art.html — Creative and visual work
-- projects.html — Project summaries
+The website is organized into dedicated pages covering different aspects of my work and interests:
 
-## Styles 🎨
+* **Home** — Introduction and site navigation.
+* **CV** — Education, experience, skills, and achievements.
+* **Research** — Research projects, publications, and academic interests.
+* **Coding** — Software projects, technical work, and development experience.
+* **Art** — Creative projects, illustrations, and visual work.
+* **Projects** — Selected other project summaries and highlights.
 
-Each page has its own dedicated stylesheet with custom colours and typography:
+## 📁 Repository Structure
 
-- home.css (Dark theme: #33343B)
-- cv.css (Warm theme: #FFF8E7)
-- research.css (Blue theme: #FFFFFF / #3D4F9F)
-- coding.css (Pink theme: #FFF0F6)
-- art.css (Beige theme: #F8F2EF)
-- projects.css (Light blue theme: #EEF7FF)
-
-## Structure 📁
-
-```
+```text
 eso0m.github.io/
 ├── home.html
 ├── cv.html
@@ -32,23 +23,45 @@ eso0m.github.io/
 ├── coding.html
 ├── art.html
 ├── projects.html
-├── css/              (Page-specific stylesheets)
-├── images/           (Portfolio images)
-├── files/            (Assets, PDFs)
+├── css/              # Page-specific stylesheets
+├── images/           # Images and visual assets
+├── files/            # PDFs and downloadable resources
 ├── README.md
 └── .gitignore
 ```
 
-## Features ✨
+## ✨ Features
 
-- Single-page navigation across all sections
-- Responsive design for mobile and desktop
-- Clean, minimal design with distinct colour themes per page
-- External links (GitHub, LinkedIn) with Font Awesome icons
-- No external dependencies or build process
+* Responsive design for desktop and mobile devices.
+* Personal interface.
+* Dedicated theme for each page.
+* Lightweight and fast-loading.
 
-## Maintenance 🔧
+## 🛠️ Tech Stack
 
-- No shared global CSS — each page is self-contained and uses only its own stylesheet
-- No JavaScript required — pure HTML and CSS
-- Entry point is home.html
+* **HTML5**
+* **CSS3**
+
+## 🔧 Development Strategy
+
+The site is intentionally lightweight, simple and easy to maintain:
+
+* Each page uses its own dedicated stylesheet.
+* No shared global CSS.
+* Fully static and deployable through GitHub Pages.
+
+## 🚀 Running Locally
+
+Clone the repository:
+
+```bash
+git clone https://github.com/eso0m/eso0m.github.io.git
+cd eso0m.github.io
+```
+Open `home.html` in your browser.
+
+## 🌐 Deployment
+
+The website is deployed using GitHub Pages and is available at:
+
+https://eso0m.github.io/
