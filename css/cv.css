@@ -1,0 +1,147 @@
+body{
+    background:
+        radial-gradient(
+            circle at 15% 40%,
+            rgba(100,170,255,0.25),
+            transparent 35%
+        ),
+        #FFF8E7;
+
+    color: #000;
+}
+
+header{
+    background: transparent;
+    color: #333333;
+}
+
+header .logo,
+header li a,
+header .menu-icon{
+    color: #333333;
+}
+
+.cv-page{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 160px;
+    position: relative;
+    
+}
+
+.cv-page::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at 15% 40%,
+            rgba(80,150,255,0.35),
+            transparent 45%
+        );
+
+    filter: blur(40px);
+    z-index: -2;
+}
+
+.page-title{
+    font-size: 64px;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.cv-document{
+    max-width: 1000px;
+    margin: 120px auto 60px auto;
+    padding: 0 40px;
+    color: #000;
+    background: #FFF8E7;
+    font-family: Arial, Helvetica, sans-serif;
+
+    position: relative;
+}
+
+.cv-document::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at 15% 40%,
+            rgba(80,150,255,0.35),
+            transparent 45%
+        );
+
+    filter: blur(40px);
+
+    z-index: -1;
+}
+
+.cv-document h1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+}
+
+.contact-info{
+    text-align: center;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.cv-section{
+    margin-bottom: 12px;
+}
+
+.cv-section h2{
+    border-bottom: 2px solid black;
+    padding-bottom: 4.8px;
+    margin-bottom: 16px;
+    font-size: 19.2px;
+    letter-spacing: 1px;
+}
+
+.cv-header{
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 4.8px;
+}
+
+.cv-header h3{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.organisation{
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
+.cv-entry{
+    margin-bottom: 24px;
+}
+
+.cv-entry ul{
+    padding-left: 24px;
+}
+
+.cv-entry li{
+    margin-bottom: 5.6px;
+}
+
+.skills-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.skills-grid h3{
+    margin-bottom: 12px;
+}
