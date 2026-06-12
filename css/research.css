@@ -72,7 +72,7 @@ section {
 }
 
 .research h1 {
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(40px, 5vw, 64px);
 }
 
 .research-item {
@@ -96,21 +96,15 @@ section {
 }
 
 .research-copy h2 {
-  font-size: 2rem;
-  margin-bottom: 12px;
+  font-size: 32px;
 }
 
 .research-place {
   color: #6B6B6B;
   margin-bottom: 14px;
-  font-size: 1rem;
-}
-
-.research-details {
+  font-size: 16px;
   line-height: 1.75;
-  font-size: 1rem;
-}
-
+  font-size: 16px;
 .research-visual {
   flex: 0 0 33%;
   min-width: 260px;

@@ -72,7 +72,7 @@ section {
 }
 
 .coding h1 {
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(40px, 5vw, 64px);
 }
 
 .coding-item {
@@ -96,21 +96,15 @@ section {
 }
 
 .coding-copy h2 {
-  font-size: 2rem;
-  margin-bottom: 12px;
+  font-size: 32px;
 }
 
 .coding-place {
   color: #777;
   margin-bottom: 14px;
-  font-size: 1rem;
-}
-
-.coding-details {
+  font-size: 16px;
   line-height: 1.75;
-  font-size: 1rem;
-  margin-bottom: 20px;
-  color: #2a2a2a;
+  font-size: 16px;
 }
 
 .coding-links {

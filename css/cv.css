@@ -19,7 +19,8 @@ body {
   min-height: 100vh;
   background: #fff8e7;
   color: #1d1d1d;
-  font-family: Arial, sans-serif;
+  font-family: 'Crimson Text', serif;
+  font-size: 20px;
 }
 
 header {
@@ -32,7 +33,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 24px;
+  padding: 0 12px;
   z-index: 1000;
 }
 
@@ -57,7 +58,7 @@ header {
 }
 
 section {
-  padding: 128px var(--page-padding);
+  padding: 20px var(--page-padding);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -74,29 +75,39 @@ section {
 
 .cv-document h1 {
   text-align: center;
-  font-size: clamp(2.75rem, 5vw, 4.5rem);
+  font-family: 'Unica One', sans-serif;
+  font-size: clamp(44px, 5vw, 72px);
   margin-bottom: 24px;
   letter-spacing: 2px;
 }
 
-.contact-info {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 24px;
-  margin-bottom: 48px;
-  color: #4d4d4d;
+.cv-intro {
+  margin-bottom: 40px;
+  text-align: justify;
+}
+
+.cv-intro .p1 {
+  font-size: 24px;
+  line-height: 1.2;
+  max-width: 840px;
+  margin: 0 auto 16px;
+}
+
+.cv-intro .p2 {
+  font-size: 20px;
+  line-height: 1.5;
+  max-width: 840px;
+  margin: 0 auto;
 }
 
 .cv-section {
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .cv-section h2 {
-  border-bottom: 2px solid #333;
   padding-bottom: 8px;
   margin-bottom: 20px;
-  font-size: 1.1rem;
+  font-size: 24px;
   letter-spacing: 1px;
 }
 
@@ -109,7 +120,7 @@ section {
 }
 
 .cv-header h3 {
-  font-size: 1rem;
+  font-size: 20px;
   font-weight: 700;
 }
 
@@ -117,6 +128,8 @@ section {
   font-style: italic;
   color: #555;
   margin-bottom: 16px;
+  display: inline;
+  margin-left: 32px;
 }
 
 .cv-entry {
@@ -124,23 +137,30 @@ section {
 }
 
 .cv-entry ul {
-  padding-left: 1.2rem;
+  padding-left: 19.2px;
   list-style: disc;
 }
 
 .cv-entry li {
-  margin-bottom: 0.75rem;
-  line-height: 1.7;
+  margin-top: 8px;
+  margin-bottom: 12px;
+  font-size:20px;
 }
 
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(220px, 1fr));
-  gap: 32px;
+  gap: 150px;
+  justify-items: center;
 }
 
 .skills-grid h3 {
   margin-bottom: 12px;
+  text-align: center;
+}
+
+.skills-grid ul {
+  text-align: justify;
 }
 
 @media (max-width: 960px) {
@@ -152,10 +172,6 @@ section {
   }
 
   section {
-    padding: 96px 8%;
-  }
-
-  .skills-grid {
-    grid-template-columns: 1fr;
+    padding: 32px 8%;
   }
 }
