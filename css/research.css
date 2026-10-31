@@ -69,6 +69,7 @@ section {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  gap: 100px;
 }
 
 .research h1 {
@@ -105,6 +106,8 @@ section {
   font-size: 16px;
   line-height: 1.75;
   font-size: 16px;
+}
+
 .research-visual {
   flex: 0 0 33%;
   min-width: 260px;

@@ -61,18 +61,24 @@ section {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 24px;
   align-items: center;
 }
 
 .coding {
-  max-width: 1200px;
-  width: 100%;
+  max-width: min(900px, 100%);
   margin: 0 auto;
+  text-align: center;
 }
 
 .coding h1 {
   font-size: clamp(40px, 5vw, 64px);
+}
+
+.coding .coming-soon {
+  font-size: 20px;
+  color: #4A4A4A;
+  font-style: italic;
 }
 
 .coding-item {

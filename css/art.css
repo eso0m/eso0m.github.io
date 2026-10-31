@@ -76,22 +76,15 @@ section {
   font-size: clamp(40px, 5vw, 64px);
 }
 
+.art .coming-soon {
+  font-size: 20px;
+  color: #4A4A4A;
+  font-style: italic;
+}
+
 .art p {
   max-width: 720px;
   margin: 0 auto;
   line-height: 1.8;
   color: #4A4A4A;
-}
-
-@media (max-width: 960px) {
-  header {
-    left: 0;
-    transform: none;
-    width: 100%;
-    padding: 0 18px;
-  }
-
-  section {
-    padding: 96px 8%;
-  }
 }

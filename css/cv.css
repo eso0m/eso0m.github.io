@@ -1,5 +1,5 @@
 ﻿:root {
-  --max-width: 1200px;
+  --max-width: 2000px;
   --page-padding: 12%;
   --header-height: 64px;
   --transition: 0.3s ease;
@@ -28,7 +28,7 @@ header {
   top: 16px;
   left: 50%;
   transform: translateX(-50%);
-  width: min(70%, var(--max-width));
+  width: min(80%, var(--max-width));
   height: var(--header-height);
   display: flex;
   align-items: center;
@@ -58,8 +58,9 @@ header {
 }
 
 section {
-  padding: 20px var(--page-padding);
+  padding: 20px 0;
   width: 100%;
+  margin: 0;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -71,6 +72,7 @@ section {
   width: 100%;
   margin: 0 auto;
   padding-top: 32px;
+  width: min(80%, var(--max-width));
 }
 
 .cv-document h1 {
@@ -81,70 +83,37 @@ section {
   letter-spacing: 2px;
 }
 
-.cv-intro {
+.intro-section .p1 {
   margin-bottom: 40px;
   text-align: justify;
 }
 
-.cv-intro .p1 {
+.intro-section .p1 {
   font-size: 24px;
   line-height: 1.2;
-  max-width: 840px;
+  width: min(80%, var(--max-width));
   margin: 0 auto 16px;
+  text-align: center;
 }
 
-.cv-intro .p2 {
+.intro-section .p2 {
   font-size: 20px;
   line-height: 1.5;
-  max-width: 840px;
+  width: min(80%, var(--max-width));
   margin: 0 auto;
 }
 
-.cv-section {
+.skills-section {
   margin-bottom: 10px;
 }
 
-.cv-section h2 {
+.skills-section h2 {
+  font-family: 'Unica One', sans-serif;
   padding-bottom: 8px;
   margin-bottom: 20px;
   font-size: 24px;
   letter-spacing: 1px;
-}
-
-.cv-header {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  flex-wrap: wrap;
-  margin-bottom: 8px;
-}
-
-.cv-header h3 {
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.organisation {
-  font-style: italic;
-  color: #555;
-  margin-bottom: 16px;
-  display: inline;
-  margin-left: 32px;
-}
-
-.cv-entry {
-  margin-bottom: 28px;
-}
-
-.cv-entry ul {
-  padding-left: 19.2px;
-  list-style: disc;
-}
-
-.cv-entry li {
-  margin-top: 8px;
-  margin-bottom: 12px;
-  font-size:20px;
+  text-align: center;
 }
 
 .skills-grid {
@@ -152,6 +121,8 @@ section {
   grid-template-columns: repeat(2, minmax(220px, 1fr));
   gap: 150px;
   justify-items: center;
+  width: min(80%, var(--max-width));
+  margin: 0 auto;
 }
 
 .skills-grid h3 {
@@ -163,15 +134,58 @@ section {
   text-align: justify;
 }
 
-@media (max-width: 960px) {
-  header {
-    left: 0;
-    transform: none;
-    width: 100%;
-    padding: 0 18px;
-  }
+.cv-section {
+  margin-bottom: 10px;
+  width: min(80%, var(--max-width));
+}
 
-  section {
-    padding: 32px 8%;
-  }
+.cv-section h2 {
+  font-family: 'Unica One', sans-serif;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.cv-header {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.cv-header h3 {
+  font-size: 20px;
+  font-weight: 700;
+  width: 100%;
+}
+
+.organisation {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 16px;
+  display: inline;
+  margin-left: 32px;
+}
+
+.cv-entry {
+  width: 100%;
+  margin-bottom: 28px;
+}
+
+.cv-entry ul {
+  display: inline-block;
+  width: min(80%, var(--max-width));
+  padding-left: 19.2px;
+  list-style: disc;
+  text-align: left;
+}
+
+.cv-entry li {
+  margin-top: 8px;
+  margin-bottom: 12px;
+  font-size: 20px;
 }
